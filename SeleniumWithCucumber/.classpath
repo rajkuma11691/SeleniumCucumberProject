@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_60"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/cucumber-core-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/cucumber-java-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/cucumber-junit-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/cucumber-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/cucumber-reporting-0.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/CucumberJars/selenium-server-standalone-3.8.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
