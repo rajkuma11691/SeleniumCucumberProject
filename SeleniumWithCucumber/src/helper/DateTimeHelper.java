@@ -5,8 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * 
- * @author bsingh5
+ * @author Rajkumar Agrawal
  *
  */
 public class DateTimeHelper {

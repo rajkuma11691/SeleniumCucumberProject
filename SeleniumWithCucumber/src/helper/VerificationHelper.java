@@ -1,14 +1,12 @@
-package com.cucumber.framework.helper.assertionHelper;
+package helper;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import com.cucumber.framework.helper.Logger.LoggerHelper;
-import com.cucumber.framework.helper.TestBase.TestBase;
-
-
-
+/**
+ * @author Rajkumar Agrawal
+ *
+ */
 public class VerificationHelper{
 
 	private static final  Logger log = LoggerHelper.getLogger(VerificationHelper.class);

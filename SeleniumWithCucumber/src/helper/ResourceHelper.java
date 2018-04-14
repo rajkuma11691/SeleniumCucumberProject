@@ -1,5 +1,5 @@
 
-package com.cucumber.framework.utility;
+package helper;
 
 
 import java.io.FileInputStream;
@@ -7,8 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 /**
- * 
- * @author bsingh5
+ * @author Rajkumar Agrawal
  *
  */
 public class ResourceHelper {

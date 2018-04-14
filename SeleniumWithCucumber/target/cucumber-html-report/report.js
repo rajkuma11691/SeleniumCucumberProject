@@ -60,14 +60,14 @@ formatter.match({
   "location": "Step_LoginToApplication.navigate_to_application()"
 });
 formatter.result({
-  "duration": 36448001388,
+  "duration": 126093275979,
   "status": "passed"
 });
 formatter.match({
   "location": "Step_LoginToApplication.user_click_on_sign_in_link()"
 });
 formatter.result({
-  "duration": 9777894580,
+  "duration": 13579103968,
   "status": "passed"
 });
 formatter.match({
@@ -80,7 +80,7 @@ formatter.match({
   "location": "Step_LoginToApplication.enter_email_address_as(String)"
 });
 formatter.result({
-  "duration": 836883313,
+  "duration": 563144993,
   "status": "passed"
 });
 formatter.match({
@@ -93,21 +93,21 @@ formatter.match({
   "location": "Step_LoginToApplication.enter_password_as(String)"
 });
 formatter.result({
-  "duration": 605989464,
+  "duration": 330673774,
   "status": "passed"
 });
 formatter.match({
   "location": "Step_LoginToApplication.click_on_sign_in_button()"
 });
 formatter.result({
-  "duration": 3709382211,
+  "duration": 9699532839,
   "status": "passed"
 });
 formatter.match({
   "location": "Step_LoginToApplication.login_is_successful()"
 });
 formatter.result({
-  "duration": 336541,
+  "duration": 405686,
   "status": "passed"
 });
 });

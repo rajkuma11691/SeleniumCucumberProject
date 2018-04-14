@@ -6,11 +6,8 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 
-
-
 /**
- * 
- * @author bsingh5
+ * @author Rajkumar Agrawal
  *
  */
 

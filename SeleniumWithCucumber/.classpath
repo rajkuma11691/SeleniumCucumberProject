@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="D:/CucumberJars/junit-4.11.jar"/>
 	<classpathentry kind="lib" path="D:/CucumberJars/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="D:/CucumberJars/selenium-server-standalone-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rajkumar Agrawal/Desktop/Selenium driver/CucumberJars/cucumber-html-0.2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

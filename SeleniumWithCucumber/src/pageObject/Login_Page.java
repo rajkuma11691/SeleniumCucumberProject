@@ -5,7 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+/**
+ * @author Rajkumar Agrawal
+ *
+ */
 
 public class Login_Page{
 	
@@ -28,13 +31,6 @@ public class Login_Page{
 	@FindBy(xpath="//*[@id='center_column']/p")
 	WebElement successMsgObject;
 	
-/*	@FindBy(xpath="//*[@id=\"email_create\"]")
-	WebElement registrationemail;
-	
-	@FindBy(xpath="//*[@id='SubmitCreate']")
-	WebElement createAnAccount;*/
-	
-
 	public Login_Page(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -64,13 +60,4 @@ public class Login_Page{
 	public void verifySuccessLoginMsg(){
 		System.out.println("User logged in successfully");
 	}
-/*	public void enterRegistrationEmail(String email){
-		log.info("entering registration email.."+email);
-		registrationemail.sendKeys(email);	
-	}
-	public RegistrationPage clickOnCreateAnAccount(){
-		createAnAccount.click();
-		return new RegistrationPage(driver);
-	}*/
-
 }
