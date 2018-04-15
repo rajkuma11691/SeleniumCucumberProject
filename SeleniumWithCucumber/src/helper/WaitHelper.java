@@ -30,7 +30,7 @@ public class WaitHelper {
 	
 	public WaitHelper(WebDriver driver) {
 		this.driver = driver;
-		Log.debug("WaitHelper : " + this.driver.hashCode());
+		//Log.debug("WaitHelper : " + this.driver.hashCode());
 	}
 	
 	public void setImplicitWait(long timeout, TimeUnit unit) {

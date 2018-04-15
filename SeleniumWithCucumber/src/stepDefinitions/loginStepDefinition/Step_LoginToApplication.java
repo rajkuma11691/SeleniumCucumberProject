@@ -5,31 +5,39 @@ package stepDefinitions.loginStepDefinition;
 
 
 import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import helper.TestBase;
+import helper.WaitHelper;
 import pageObject.Login_Page;
 /**
  * @author Rajkumar Agrawal
  *
  */
 public class Step_LoginToApplication{
-	private final Logger log = Logger.getLogger(Step_LoginToApplication.class);
 
 	WebDriver driver;
+	private Logger Log = Logger.getLogger(Step_LoginToApplication.class);
+	//TestBase testbase;
 	Login_Page loginpage;
+	
 	
      @Given("^navigate to application$")
 	 public void navigate_to_application() throws Throwable {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("http://automationpractice.com/index.php?");
-		Thread.sleep(3000);
-		log.info("User is navigated and open the browser");
+    		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/drivers/chromedriver.exe");
+    		driver = new ChromeDriver();
+    		driver.manage().window().maximize();
+    		driver.get("http://automationpractice.com/index.php?");
+    		Thread.sleep(3000);
+    		Log.info("User is navigated and open the browser");
+    	 //testbase = new TestBase(driver);
+		//testbase.launchedAndNavigateBrowser();
 	}
 	@When("^user click on sign in link$")
 	public void user_click_on_sign_in_link() throws Throwable {
