@@ -1,15 +1,18 @@
+/**
+ * 
+ */
 package stepDefinitions.ProductCategory;
 
 import org.apache.log4j.Logger;
 //import org.testng.Assert;
-
-
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import pageObject.HomePage;
 import pageObject.ProductCategoryPage;
-
+/**
+ * @author Rajkumar Agrawal
+ *
+ */
 public class ProductCategory {
 	private final Logger log = Logger.getLogger(ProductCategory.class);
 	HomePage homepage;

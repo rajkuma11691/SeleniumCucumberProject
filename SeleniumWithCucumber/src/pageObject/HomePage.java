@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package pageObject;
 
 import org.apache.log4j.Logger;
@@ -17,7 +20,6 @@ public class HomePage {
 	private final Logger log = Logger.getLogger(HomePage.class);
 	
 	String Tshirts = "T-shirts";
-	//String Blouses = "Blouses";
 	String CasualDresses = "Casual Dresses";
 
 	

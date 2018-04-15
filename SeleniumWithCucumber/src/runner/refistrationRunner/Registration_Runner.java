@@ -1,10 +1,16 @@
+/**
+ * 
+ */
 package runner.refistrationRunner;
 
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-
+/**
+ * @author Rajkumar Agrawal
+ *
+ */
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "featurefile/registration/RegistrationTest.feature" }, glue = {
 		"stepDefinitions.registrationStepDefinition" }, plugin = {"html:target/cucumber-html-report"})

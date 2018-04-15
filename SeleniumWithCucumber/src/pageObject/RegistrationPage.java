@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package pageObject;
 
 import java.util.Iterator;
@@ -14,9 +17,6 @@ import org.openqa.selenium.support.ui.Select;
  * @author Rajkumar Agrawal
  *
  */
-
-
-
 public class RegistrationPage {
 
 	WebDriver driver;
