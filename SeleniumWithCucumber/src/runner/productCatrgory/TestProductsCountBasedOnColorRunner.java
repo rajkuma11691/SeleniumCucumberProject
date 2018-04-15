@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "featurefile/productCategory1/TestProductsCountBasedOnColor.feature", glue = {
-		"stepDefinitions.ProductCategory/ProductCategory.java"}, plugin = {"html:target/cucumber-html-report"})
+		"stepDefinitions.ProductCategory"}, plugin = {"html:target/cucumber-html-report"})
 public class TestProductsCountBasedOnColorRunner {
 
 }

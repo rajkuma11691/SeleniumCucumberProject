@@ -6,6 +6,8 @@ package stepDefinitions.ProductCategory;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import pageObject.HomePage;
@@ -19,6 +21,16 @@ public class ProductCategory {
 	WebDriver driver;
 	HomePage homepage;
 	ProductCategoryPage productCategoryPage;
+	
+	@Given("^navigate to the application$")
+	public void navigate_to_the_application() throws Throwable {
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://automationpractice.com/index.php?");
+		Thread.sleep(3000);
+		log.info("User is navigated and open the browser");
+	}
 	
 	@Given("^user click on women navigation menu$")
 	public void user_click_on_women_navigation_menu() throws Throwable {
