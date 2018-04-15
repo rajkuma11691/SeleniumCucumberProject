@@ -16,42 +16,42 @@ import org.openqa.selenium.WebDriver;
 public class AlertHelper{
 	
 	private WebDriver driver;
-	private Logger oLog = LoggerHelper.getLogger(AlertHelper.class);
+	private Logger Log = Logger.getLogger(AlertHelper.class);
 	
 	public AlertHelper(WebDriver driver) {
 		this.driver = driver;
-		oLog.debug("AlertHelper : " + this.driver.hashCode());
+		Log.debug("AlertHelper : " + this.driver.hashCode());
 	}
 	
 	public Alert getAlert() {
-		oLog.debug("");
+		Log.debug("");
 		return driver.switchTo().alert();
 	}
 	
 	public void AcceptAlert() {
-		oLog.info("");
+		Log.info("");
 		getAlert().accept();
 	}
 	
 	public void DismissAlert() {
-		oLog.info("");
+		Log.info("");
 		getAlert().dismiss();
 	}
 
 	public String getAlertText() {
 		String text = getAlert().getText();
-		oLog.info(text);
+		Log.info(text);
 		return text;
 	}
 
 	public boolean isAlertPresent() {
 		try {
 			driver.switchTo().alert();
-			oLog.info("true");
+			Log.info("true");
 			return true;
 		} catch (NoAlertPresentException e) {
 			// Ignore
-			oLog.info("false");
+			Log.info("false");
 			return false;
 		}
 	}
@@ -60,7 +60,7 @@ public class AlertHelper{
 		if (!isAlertPresent())
 			return;
 		AcceptAlert();
-		oLog.info("");
+		Log.info("");
 	}
 
 	public void DismissAlertIfPresent() {
@@ -68,7 +68,7 @@ public class AlertHelper{
 		if (!isAlertPresent())
 			return;
 		DismissAlert();
-		oLog.info("");
+		Log.info("");
 	}
 	
 	public void AcceptPrompt(String text) {
@@ -79,6 +79,6 @@ public class AlertHelper{
 		Alert alert = getAlert();
 		alert.sendKeys(text);
 		alert.accept();
-		oLog.info(text);
+		Log.info(text);
 	}
 }

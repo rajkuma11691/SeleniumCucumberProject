@@ -4,7 +4,8 @@
 package stepDefinitions.ProductCategory;
 
 import org.apache.log4j.Logger;
-//import org.testng.Assert;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import pageObject.HomePage;
@@ -15,12 +16,13 @@ import pageObject.ProductCategoryPage;
  */
 public class ProductCategory {
 	private final Logger log = Logger.getLogger(ProductCategory.class);
+	WebDriver driver;
 	HomePage homepage;
 	ProductCategoryPage productCategoryPage;
 	
 	@Given("^user click on women navigation menu$")
 	public void user_click_on_women_navigation_menu() throws Throwable {
-	   homepage = new HomePage(TestBase.driver);
+	   homepage = new HomePage(driver);
 	   log.info("clicking on women menu");
 	   productCategoryPage = homepage.clickOnMenu(homepage.womenMenu);
 	}
@@ -29,11 +31,13 @@ public class ProductCategory {
 	public void verify_total_number_of_women_products_dispalyed_as(String arg1) throws Throwable {
 		int total = productCategoryPage.getTotalProducts();
 		if(total == Integer.parseInt(arg1)){
-			Assert.assertTrue(true, "given product count is matching with runtime product Data");	
+			//Assert.assertTrue(true, "given product count is matching with runtime product Data");	
+			Assert.assertTrue("given product count is matching with runtime product Data", true);
 		}
 		else{
 			log.info("actual product counts are : "+total);
-			Assert.assertTrue(false, "given product count is not matching with runtime product Data");
+			//Assert.assertTrue(false, "given product count is not matching with runtime product Data");
+			Assert.assertTrue("given product count is not matching with runtime product Data", false);
 		}
 	}
 	
@@ -47,11 +51,13 @@ public class ProductCategory {
 	public void verify_total_number_of_products_dispalyed_as(String arg1) throws Throwable {
 		int total = productCategoryPage.getTotalProducts();
 		if(total == Integer.parseInt(arg1)){
-			Assert.assertTrue(true, "given product count is matching with runtime product Data based on color filter");	
+			//Assert.assertTrue(true, "given product count is matching with runtime product Data based on color filter");	
+			Assert.assertTrue("given product count is matching with runtime product Data based on color filter", true);
 		}
 		else{
 			log.info("actual product counts are : "+total);
-			Assert.assertTrue(false, "given product count is not matching with runtime product Data based on color filter");
+			//Assert.assertTrue(false, "given product count is not matching with runtime product Data based on color filter");
+			Assert.assertTrue("given product count is not matching with runtime product Data based on color filter", false);
 		}
 	}
 

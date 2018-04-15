@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefile/login/loginTest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("featurefile/productCategory1/TestProductsCountBasedOnColor.feature");
 formatter.feature({
   "line": 2,
-  "name": "Login to application",
+  "name": "ProductCategoryPage1",
   "description": "",
-  "id": "login-to-application",
+  "id": "productcategorypage1",
   "keyword": "Feature",
   "tags": [
     {
@@ -13,101 +13,53 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 5,
-  "name": "Login to application",
+  "line": 4,
+  "name": "Verify Total Number Of Products based on color filters",
   "description": "",
-  "id": "login-to-application;login-to-application",
+  "id": "productcategorypage1;verify-total-number-of-products-based-on-color-filters",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 4,
+      "line": 3,
       "name": "@tag1"
     }
   ]
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "navigate to application",
   "keyword": "Given "
 });
 formatter.step({
+  "line": 6,
+  "name": "user click on women navigation menu",
+  "keyword": "And "
+});
+formatter.step({
   "line": 7,
-  "name": "user click on sign in link",
-  "keyword": "When "
+  "name": "click on orange color filter",
+  "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "enter email address as \"agrawal.rajkumar@gmail.com\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter password as \"Selenium\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "click on sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "Login is successful",
+  "name": "verify total number of products dispalyed as \"3\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "Step_LoginToApplication.navigate_to_application()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 79186462926,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Step_LoginToApplication.user_click_on_sign_in_link()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 13738721671,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "agrawal.rajkumar@gmail.com",
-      "offset": 24
-    }
-  ],
-  "location": "Step_LoginToApplication.enter_email_address_as(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 986671226,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Selenium",
-      "offset": 19
-    }
-  ],
-  "location": "Step_LoginToApplication.enter_password_as(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 430682974,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Step_LoginToApplication.click_on_sign_in_button()"
-});
-formatter.result({
-  "duration": 10830746069,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Step_LoginToApplication.login_is_successful()"
-});
-formatter.result({
-  "duration": 422433,
-  "status": "passed"
+  "status": "undefined"
 });
 });

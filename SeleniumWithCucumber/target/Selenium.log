@@ -52,3 +52,4 @@
 2018-04-15 13:15:56 [INFO ] [Login_Page] - [clickOnSubmitButton] clicking on submit button...
 2018-04-15 13:15:56 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
 2018-04-15 13:16:07 [INFO ] [WaitHelper] - [waitForElement] element found...WOMEN
+2018-04-15 13:35:45 [INFO ] [Step_LoginToApplication] - [navigate_to_application] User is navigated and open the browser
