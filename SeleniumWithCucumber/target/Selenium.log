@@ -3,3 +3,41 @@
 2018-04-15 00:59:58 [INFO ] [Login_Page] - [enterEmailAddress] entering email address....agrawal.rajkumar@gmail.com
 2018-04-15 00:59:59 [INFO ] [Login_Page] - [enterPassword] entering password....Selenium
 2018-04-15 00:59:59 [INFO ] [Login_Page] - [clickOnSubmitButton] clicking on submit button...
+2018-04-15 12:03:47 [INFO ] [Step_LoginToApplication] - [navigate_to_application] User is navigated and open the browser
+2018-04-15 12:03:48 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
+2018-04-15 12:11:31 [INFO ] [Step_LoginToApplication] - [navigate_to_application] User is navigated and open the browser
+2018-04-15 12:11:32 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
+2018-04-15 12:11:32 [INFO ] [Login_Page] - [clickOnSignInLink] clicked on sign in link...
+2018-04-15 12:11:44 [INFO ] [Login_Page] - [enterEmailAddress] entering email address....agrawal.rajkumar@gmail.com
+2018-04-15 12:11:45 [INFO ] [Login_Page] - [enterPassword] entering password....Selenium
+2018-04-15 12:11:46 [INFO ] [Login_Page] - [clickOnSubmitButton] clicking on submit button...
+2018-04-15 12:11:46 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
+2018-04-15 12:11:53 [INFO ] [WaitHelper] - [waitForElement] element found...WOMEN
+2018-04-15 12:15:13 [INFO ] [Step_Registration] - [open_browser_navigate_to_application] User is navigated and open the browser
+2018-04-15 12:15:13 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
+2018-04-15 12:20:15 [INFO ] [Step_Registration] - [open_browser_navigate_to_application] User is navigated and open the browser
+2018-04-15 12:20:15 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
+2018-04-15 12:20:15 [INFO ] [RegistrationPage] - [clickOnSignInLink] clicked on sign in link...
+2018-04-15 12:20:21 [INFO ] [RegistrationPage] - [enterRegistrationEmail] entering registration email..rajabcd@gmail.com
+2018-04-15 12:20:25 [INFO ] [WaitHelper] - [waitForElement] element found...Create an account
+2018-04-15 12:20:28 [INFO ] [RegistrationPage] - [setMrRadioButton] selecting mr checkbox..
+2018-04-15 12:39:12 [INFO ] [Step_Registration] - [open_browser_navigate_to_application] User is navigated and open the browser
+2018-04-15 12:39:13 [INFO ] [WaitHelper] - [waitForElement] element found...Sign in
+2018-04-15 12:39:13 [INFO ] [RegistrationPage] - [clickOnSignInLink] clicked on sign in link...
+2018-04-15 12:39:31 [INFO ] [RegistrationPage] - [enterRegistrationEmail] entering registration email..rajabcde@gmail.com
+2018-04-15 12:39:35 [INFO ] [WaitHelper] - [waitForElement] element found...Create an account
+2018-04-15 12:39:39 [INFO ] [RegistrationPage] - [setMrRadioButton] selecting mr checkbox..
+2018-04-15 12:39:40 [INFO ] [WaitHelper] - [waitForElement] element found...
+2018-04-15 12:39:41 [INFO ] [RegistrationPage] - [setFirstName] entering firstName..firstNameone
+2018-04-15 12:39:42 [INFO ] [RegistrationPage] - [setLastname] entering lastname..lastNameone
+2018-04-15 12:39:42 [INFO ] [RegistrationPage] - [setPassword] entering password..password1
+2018-04-15 12:39:45 [INFO ] [RegistrationPage] - [setYourAddressFirstName] entering yourAddressFirstName..addressFirstNameone
+2018-04-15 12:39:45 [INFO ] [RegistrationPage] - [setYourAddressLastName] entering yourAddressLastName..addressLastNameone
+2018-04-15 12:39:46 [INFO ] [RegistrationPage] - [setYourAddressCompany] entering yourAddressCompany..addressCompanyNameone
+2018-04-15 12:39:46 [INFO ] [RegistrationPage] - [setAddress] entering address..address1
+2018-04-15 12:39:47 [INFO ] [RegistrationPage] - [setYourAddressCity] entering yourAddressCity..Mumbai
+2018-04-15 12:39:47 [INFO ] [RegistrationPage] - [setYourAddressState] entering yourAddressState..Alaska
+2018-04-15 12:39:48 [INFO ] [RegistrationPage] - [setYourAddressPostCode] entering yourAddressPostCode..99501
+2018-04-15 12:39:48 [INFO ] [RegistrationPage] - [setMobilePhone] entering mobilePhone..9999999999
+2018-04-15 12:39:48 [INFO ] [RegistrationPage] - [setAddressAlias] entering addressAlias..addressAlias1
+2018-04-15 12:39:48 [INFO ] [RegistrationPage] - [clickRegistration] clicked on registration..[[ChromeDriver: chrome on XP (609df5624116b9fdaa9358af3fdb2b93)] -> xpath: //*[@id='submitAccount']]

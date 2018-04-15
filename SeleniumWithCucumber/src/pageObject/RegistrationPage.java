@@ -111,7 +111,7 @@ public class RegistrationPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
-		waitHelper.waitForElement(driver, mrRadioButton, ObjectRepo.reader.getExplicitWait());
+		waitHelper.waitForElement(driver, signin,20);
 	}
 	public void clickOnSignInLink(){
 		log.info("clicked on sign in link...");
@@ -122,10 +122,12 @@ public class RegistrationPage {
 		registrationemailid.sendKeys(email);	
 	}
 	public void clickOnCreateAnAccount(){
+		waitHelper.waitForElement(driver, createAccount,20);
 		createAccount.click();
 	}
 	public void setMrRadioButton() {
 		log.info("selecting mr checkbox..");
+		waitHelper.waitForElement(driver, mrRadioButton,20);
 		this.mrRadioButton.click();
 	}
 

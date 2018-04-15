@@ -27,5 +27,5 @@ Feature: Registrtion.
 
     Examples: 
      |emailID       | firstName    | lastName    | password  | day | month    | year | addressFirstName    | addressLastName    | addressCompanyName    | address  | city      | state  | zipcode | mobilePhoneNumber | addressAlias  |
-     |rajabcd@gmail.com | firstNameone | lastNameone | password1 |   3 | February | 2013 | addressFirstNameone | addressLastNameone | addressCompanyNameone | address1 | Mumbai | Alaska |   99501 |        9999999999 | addressAlias1 |
+     |rajabcde@gmail.com | firstNameone | lastNameone | password1 |   3 | February | 2013 | addressFirstNameone | addressLastNameone | addressCompanyNameone | address1 | Mumbai | Alaska |   99501 |        9999999999 | addressAlias1 |
       

@@ -40,7 +40,8 @@ public class Login_Page{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
-		waitHelper.waitForElement(driver, signin,ObjectRepo.reader.getExplicitWait());
+		waitHelper.waitForElement(driver, signin,20);
+
 	}
 	
 	public void clickOnSignInLink(){
@@ -60,6 +61,7 @@ public class Login_Page{
 	
 	public HomePage clickOnSubmitButton(){
 		log.info("clicking on submit button...");
+		waitHelper.waitForElement(driver, submitLogin,20);
 		submitLogin.click();
 		return new HomePage(driver);
 	}

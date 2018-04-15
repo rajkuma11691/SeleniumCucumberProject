@@ -52,7 +52,7 @@ public class ProductCategoryPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
-		waitHelper.waitForElement(driver, catalogTextObj,ObjectRepo.reader.getExplicitWait());
+		waitHelper.waitForElement(driver, catalogTextObj,20);
 	}
 	
 	public void mouseOverOnProduct(int number){

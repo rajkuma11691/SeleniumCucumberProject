@@ -47,7 +47,7 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
-		waitHelper.waitForElement(driver, womenMenu,ObjectRepo.reader.getExplicitWait());
+		waitHelper.waitForElement(driver, womenMenu,20);
 
 	}
 	
