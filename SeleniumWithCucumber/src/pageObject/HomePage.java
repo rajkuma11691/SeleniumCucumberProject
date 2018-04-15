@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import helper.WaitHelper;
 /**
  * @author Rajkumar Agrawal
  *
@@ -18,7 +20,7 @@ public class HomePage {
 	
 	WebDriver driver;
 	private final Logger log = Logger.getLogger(HomePage.class);
-	
+	WaitHelper waitHelper;
 	String Tshirts = "T-shirts";
 	String CasualDresses = "Casual Dresses";
 
@@ -44,6 +46,8 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		waitHelper = new WaitHelper(driver);
+		waitHelper.waitForElement(driver, womenMenu,ObjectRepo.reader.getExplicitWait());
 
 	}
 	

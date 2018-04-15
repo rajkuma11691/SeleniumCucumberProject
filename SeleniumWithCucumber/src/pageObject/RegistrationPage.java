@@ -13,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
+import helper.WaitHelper;
 /**
  * @author Rajkumar Agrawal
  *
@@ -21,7 +23,7 @@ public class RegistrationPage {
 
 	WebDriver driver;
 	private final Logger log = Logger.getLogger(RegistrationPage.class);
-	
+	WaitHelper waitHelper;
 	@FindBy(xpath="//*[@id='header']/div[2]/div/div/nav/div[1]/a")
 	WebElement signin;
 	
@@ -108,6 +110,8 @@ public class RegistrationPage {
 	public RegistrationPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		waitHelper = new WaitHelper(driver);
+		waitHelper.waitForElement(driver, mrRadioButton, ObjectRepo.reader.getExplicitWait());
 	}
 	public void clickOnSignInLink(){
 		log.info("clicked on sign in link...");

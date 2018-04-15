@@ -15,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import helper.JavaScriptHelper;
 import helper.VerificationHelper;
+import helper.WaitHelper;
 /**
  * @author Rajkumar Agrawal
  *
@@ -25,7 +26,7 @@ public class ProductCategoryPage {
 
 	WebDriver driver;
 	private final Logger log = Logger.getLogger(ProductCategoryPage.class);
-	
+	WaitHelper waitHelper;
 	
 	public String Black = "Black";
 	public String Orange = "Orange";
@@ -50,6 +51,8 @@ public class ProductCategoryPage {
 	public ProductCategoryPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		waitHelper = new WaitHelper(driver);
+		waitHelper.waitForElement(driver, catalogTextObj,ObjectRepo.reader.getExplicitWait());
 	}
 	
 	public void mouseOverOnProduct(int number){
