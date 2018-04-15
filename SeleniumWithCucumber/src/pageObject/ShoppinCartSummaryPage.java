@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import helper.VerificationHelper;
-import helper.WaitHelper;
+
 /**
  * @author Rajkumar Agrawal
  *
@@ -36,8 +36,6 @@ public class ShoppinCartSummaryPage {
 	public ShoppinCartSummaryPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waitHelper = new WaitHelper(driver);
-		waitHelper.waitForElement(driver, yourShoppingCart,ObjectRepo.reader.getExplicitWait());
 	}
 	
 	public boolean verifyProduct(String prod){
