@@ -24,7 +24,7 @@ public class AlertHelper{
 	}
 	
 	public Alert getAlert() {
-		Log.debug("");
+		Log.info("");
 		return driver.switchTo().alert();
 	}
 	

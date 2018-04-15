@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 public class DropDownHelper {
 	
 	private WebDriver driver;
-	private Logger Log = LoggerHelper.getLogger(DropDownHelper.class);
+	private Logger Log = Logger.getLogger(DropDownHelper.class);
 
 	public DropDownHelper(WebDriver driver) {
 		this.driver = driver;

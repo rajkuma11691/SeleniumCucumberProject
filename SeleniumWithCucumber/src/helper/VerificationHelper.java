@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
  */
 public class VerificationHelper{
 
-	private static final  Logger log = LoggerHelper.getLogger(VerificationHelper.class);
+	private static final  Logger log = Logger.getLogger(VerificationHelper.class);
 
 	public static synchronized boolean verifyElementPresent( WebElement element) {
 		boolean isDispalyed = false;
